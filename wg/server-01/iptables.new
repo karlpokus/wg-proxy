@@ -1,0 +1,2 @@
+iptables -t nat -A PREROUTING -p udp --dport 51820 -j DNAT --to-destination 172.28.128.8:51820
+iptables -t nat -A POSTROUTING -j MASQUERADE
